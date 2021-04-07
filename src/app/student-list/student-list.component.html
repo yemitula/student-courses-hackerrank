@@ -1,0 +1,9 @@
+<div>
+  <b>Students: </b>
+  <select id="student-list-select" (change)="selectStudent($event.target.value)">
+    <option value="">Select Student</option>
+    <option *ngFor="let student of students" [value]="student.email">{{student.firstName}} {{student.lastName}}</option>
+  </select>
+</div>
+<br />
+<app-student-info *ngIf="selectedStudent" id="app-student-info-component" [student]="selectedStudent" [courses]="courses"></app-student-info>

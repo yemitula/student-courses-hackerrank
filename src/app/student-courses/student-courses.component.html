@@ -1,0 +1,9 @@
+<div>
+  <p><b>Courses:</b>
+    <p>
+      <ul id="student-courses-list">
+        <li *ngFor="let course of courses">
+          {{course.name}} - {{course.instructor}} ({{course.credits}} credits)
+        </li>
+      </ul>
+</div>

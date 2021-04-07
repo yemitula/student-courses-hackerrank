@@ -1,0 +1,8 @@
+<div>
+  <div id="student-name-div"><b>Name: </b>{{student?.firstName}} {{student?.lastName}}</div>
+  <div id="student-number-div"><b>Student Number: </b>{{student?.studentNumber}}</div>
+  <div id="student-email-div"><b>Email: </b>{{student?.email}}</div>
+  <div id="student-registration-date-div"><b>Registration Date: </b>{{student?.registrationDate | date:'MMMM d, y'}}</div>
+</div>
+<br />
+<app-student-courses id="app-student-courses-component" [courses]="courses"></app-student-courses>
